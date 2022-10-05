@@ -1,0 +1,143 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+$default-background: #f3f2f1;
+$dark-background: #201F1F;
+$contrast-background: #000000;
+$dark-color: #FFFFFF;
+$contrast-color: #FFFFFF;
+
+.conversation {
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    line-height: 1.3333;
+    transition: box-shadow 0.467s ease 0s, background-color 0.267s ease-in-out 0s, margin 0.267s ease-in-out 0s, border-color 0.267s ease-in-out 0s;
+    // transition: height 0.5s ease 0s;
+
+    border-radius: 0.4rem;
+    border-color: rgb(224, 224, 224);
+    border-style: solid;
+    border-width: 0.1rem;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+
+    .parentMessage {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+
+        .senderPhoto {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .principalMessage {
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 84%;
+            overflow: scroll;
+
+            .senderInfo {
+                display: flex;
+                align-items: center;
+
+                .senderNameLink {
+                    font-weight: 600;
+                    color: rgb(91, 95, 199);
+                    font-size: 18px;
+                    word-break: break-word;
+                    margin-right: 6px;
+                }
+
+                .senderNameLink:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+
+                .senderDate {
+                    font-size: 12px;
+                    color: rgb(97, 97, 97);
+                }
+            }
+
+            .btnSearchReplies {
+                display: flex;
+                justify-content: center;
+                width: 100px;
+                height: 17px;
+                margin: 0 auto;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .linkMessage {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.repliesContainer {
+    display: flex;
+    flex-direction: column;
+    border-top-color: rgb(224, 224, 224);
+    border-top-style: solid;
+    border-top-width: 0.1rem;
+
+    .reply {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 32px;
+        margin-left: 32px;
+        margin-top: 7px;
+        margin-bottom: 4px;
+
+        .replierPhoto {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .replierMessage {
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 84%;
+            overflow: scroll;
+
+            .replierSenderInfo {
+                display: flex;
+                align-items: center;
+
+                .replierSenderNameLink {
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 14px;
+                    word-break: break-word;
+                    margin-right: 6px;
+                }
+
+                .replierSenderDate {
+                    font-size: 12px;
+                    color: rgb(97, 97, 97);
+                }
+            }
+        }
+
+        .linkMessage {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.noMessages {
+    max-width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

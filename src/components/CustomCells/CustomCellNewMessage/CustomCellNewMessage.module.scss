@@ -1,0 +1,18 @@
+.commentActive{
+    color: #3D8CB9;
+    cursor: pointer;
+    .icon{
+        font-size: 1rem;
+    }
+    .iconError{
+        color: red;
+        cursor: initial;
+        font-size: 1rem;
+    }
+}
+
+.containerSpinner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}

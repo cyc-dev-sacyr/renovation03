@@ -1,0 +1,15 @@
+.attachmentsPickerContainer {
+    .addAttachmentsButtonContainer ´{
+        
+      display: block;  
+    }
+    .fileContainer {
+        margin-top: 10px;
+        .fileAttachment {
+            width: fit-content;
+            display: inline-block;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
